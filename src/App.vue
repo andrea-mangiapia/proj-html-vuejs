@@ -8,7 +8,7 @@
 
     <!-- FOOTER -->    
     <footer>
-      <MyFooter/>
+      <MyFooter :menuOne="menuExplore" :menuTwo="menuInformation" :iconSocialtwo="social"/>
     </footer>
   </div>
 </template>
@@ -77,7 +77,7 @@ export default {
         },
       ],
 
-      /* menuExplore: [
+      menuExplore: [
         {
           text: 'Start here',
           url: '#',
@@ -117,7 +117,7 @@ export default {
           text: 'Terms of services',
           url: '#',
         },
-      ], */
+      ],
 
 
     }
@@ -127,5 +127,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/style/common.scss'
+@import './assets/style/common.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
+
 </style>

@@ -22,7 +22,7 @@
                     <img src="../assets/img/dark-logo.png" alt="Logo MaxCoach">
                 </div>
                 <nav>
-                    <ul>
+                    <ul class="am-flex">
                         <li v-for="(element, index) in menuHeader" :key="index">
                             <a :href="element.url">{{element.text}}</a>
                         </li>
@@ -30,7 +30,7 @@
                 </nav>
 
                 <div class="social">
-                    <ul>
+                    <ul class="am-flex">
                         <li v-for="(element, index) in iconSocial" :key="index">
                             <a :href="element.url"><img :src="element.icon" :alt="element.text_alt"></a>
                         </li>
@@ -81,28 +81,14 @@ export default {
         margin: 0 15px;
     }
 
-    ul {
-        display: flex;
-
-        li {
-            list-style-type: none;
-            
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-    }
-
     .social li {
         margin: 0 8px;
 
     }
 
     .social li img {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
 }
 

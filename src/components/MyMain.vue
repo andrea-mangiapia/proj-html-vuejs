@@ -1,16 +1,26 @@
 <template>
     <main>
-        <MyJumbotron/>
+        <SectionJumbotron/>
+
+        <SectionAbout/>
+
+        <SectionTestimonials/>
+
+        
     </main>
 </template>
 
 <script>
-import MyJumbotron from './MyJumbotron.vue';
+import SectionJumbotron from './SectionJumbotron.vue';
+import SectionAbout from './SectionAbout.vue';
+import SectionTestimonials from './SectionTestimonials.vue';
 
 export default {
     name: "MyMain",
-    components: { 
-        MyJumbotron
-    }
+    components: {
+    SectionJumbotron,
+    SectionAbout,
+    SectionTestimonials
+}
 }
 </script>
