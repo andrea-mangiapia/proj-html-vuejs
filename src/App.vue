@@ -1,13 +1,11 @@
 <template>
   <div id="app">
     <!-- HEADER -->
-    <header>
-      <MyHeader/>
-    </header>
+      <MyHeader :menuHeader="mainMenu" :iconSocial="social" />
+
     <!-- MAIN -->
-    <main>
-      <MyMain/>
-    </main>
+    <MyMain/>
+
     <!-- FOOTER -->    
     <footer>
       <MyFooter/>
@@ -26,7 +24,105 @@ export default {
     MyHeader,
     MyMain,
     MyFooter
-}
+  },
+  data() {
+    return {
+      mainMenu: [
+        {
+          text: 'Home',
+          url: '#',
+        },
+        {
+          text: 'Pages',
+          url: '#',
+        },
+        {
+          text: 'Courses',
+          url: '#',
+        },
+        {
+          text: 'Features',
+          url: '#',
+        },
+        {
+          text: 'Blog',
+          url: '#',
+        },
+        {
+          text: 'Shop',
+          url: '#',
+        },
+      ],
+
+      social: [
+        {
+          icon: require('./assets/img/twitter.svg'),
+          text_alt: 'Twitter',
+          url: '#',
+        },
+        {
+          icon: require('./assets/img/facebook.svg'),
+          text_alt: 'Facebook',
+          url: '#',
+        },
+        {
+          icon: require('./assets/img/black-instagram.svg'),
+          text_alt: 'Instagram',
+          url: '#',
+        },
+        {
+          icon: require('./assets/img/linkedin-square.svg'),
+          text_alt: 'Linkedin',
+          url: '#',
+        },
+      ],
+
+      /* menuExplore: [
+        {
+          text: 'Start here',
+          url: '#',
+        },
+        {
+          text: 'Success story',
+          url: '#',
+        },
+        {
+          text: 'Blog',
+          url: '#',
+        },
+        {
+          text: 'Courses',
+          url: '#',
+        },
+        {
+          text: 'Contact us',
+          url: '#',
+        },
+      ],
+
+      menuInformation: [
+        {
+          text: 'Membership',
+          url: '#',
+        },
+        {
+          text: 'Purchase guide',
+          url: '#',
+        },
+        {
+          text: 'Privacy policy',
+          url: '#',
+        },
+        {
+          text: 'Terms of services',
+          url: '#',
+        },
+      ], */
+
+
+    }
+  }
+
 }
 </script>
 

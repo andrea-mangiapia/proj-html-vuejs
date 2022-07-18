@@ -6,8 +6,30 @@
 }
 /* COMMON */
 #app {
+    font-size: 18px;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #1b1b1b;
-}
+};
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+};
+
+.container-short {
+    width: 65%;
+    margin: 0 auto;
+
+    /* TEST */
+    background-color: lightgreen;
+};
+
+.container-long {
+    width: 95%;
+    margin: 0 auto;
+
+    /* TEST */
+    background-color: lightblue;
+};
