@@ -145,7 +145,7 @@ export default {
 }
 h2 {
   text-align: center;
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
 
 .btn {
