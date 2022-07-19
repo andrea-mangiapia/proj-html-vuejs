@@ -119,7 +119,6 @@ export default {
         },
       ],
 
-
     }
   }
 
@@ -128,6 +127,52 @@ export default {
 
 <style lang="scss">
 @import './assets/style/common.scss';
-@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
+@import './assets/style/variables.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
+
+@font-face {
+  font-family: "Rossela";
+  src: local("Rossela"),
+  url(./assets/font/Rossela-Demo.ttf) format("truetype");
+}
+
+.font-style-italic {
+  font-family: "Rossela", Helvetica, Arial;
+  font-size: 60px;
+  font-weight: 400;
+  color: $secondary_text;
+}
+
+.btn {
+  padding: 12px 26px;
+  margin: 20px 0;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.btn-primary {
+  background-color: $color_orange;
+  border: 1px solid $color_orange;
+  color: white;
+
+  &:hover {
+    background-color: $color_ice_cold;
+    border: 1px solid $color_ice_cold;
+  }
+}
+
+.btn-secondary {
+  background-color: $color_orange_light;
+  border: 1px solid $color_orange_light;
+  color: $color_orange;
+
+  &:hover {
+    background-color: $color_ice_cold;
+    border: 1px solid $color_ice_cold;
+    color: white;
+  }
+}
+
+
 
 </style>

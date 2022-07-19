@@ -83,6 +83,7 @@ export default {
     justify-content: space-between;
     font-size: 14px;
     line-height: 1.7;
+    padding: 100px 0px 50px 0px;
 
     .social {
         margin-top: 10px;

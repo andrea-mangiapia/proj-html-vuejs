@@ -54,7 +54,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/variables.scss';
 .header-top {
-    background-color: #f4f0ef;
+    background-color: $color_silver;
     text-align: center;
     display: flex;
     justify-content: center;
