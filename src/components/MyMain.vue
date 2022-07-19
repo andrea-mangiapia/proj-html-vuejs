@@ -2,7 +2,7 @@
     <main>
         <SectionJumbotron/>
 
-        <SectionAbout/>
+        <SectionServices/>
 
         <SectionTestimonials/>
 
@@ -12,14 +12,14 @@
 
 <script>
 import SectionJumbotron from './SectionJumbotron.vue';
-import SectionAbout from './SectionAbout.vue';
+import SectionServices from './SectionServices.vue';
 import SectionTestimonials from './SectionTestimonials.vue';
 
 export default {
     name: "MyMain",
     components: {
     SectionJumbotron,
-    SectionAbout,
+    SectionServices,
     SectionTestimonials
 }
 }

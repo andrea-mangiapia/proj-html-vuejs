@@ -8,6 +8,7 @@
 #app {
     font-size: 18px;
     font-family: Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #1b1b1b;
@@ -19,11 +20,8 @@
 };
 
 .container-short {
-    width: 65%;
+    width: 68%;
     margin: 0 auto;
-
-    /* TEST */
-    background-color: lightgreen;
 };
 
 .container-long {

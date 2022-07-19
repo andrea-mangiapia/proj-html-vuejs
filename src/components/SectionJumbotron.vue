@@ -52,11 +52,16 @@ export default {
     .cta-jumbo {
         width: 40%;
         text-align: center;
+
+        .font-style-italic {
+            font-size: 60px;
+        }
+
+        h2 {
+        font-size: 40px;
+        }
     }
 
-    h2 {
-        font-size: 40px;
-    }
     .img-jumbo {
         position: relative;
         height: 550px;

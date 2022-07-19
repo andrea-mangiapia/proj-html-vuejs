@@ -138,9 +138,14 @@ export default {
 
 .font-style-italic {
   font-family: "Rossela", Helvetica, Arial;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 400;
   color: $secondary_text;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  padding: 10px 0;
 }
 
 .btn {
@@ -167,8 +172,8 @@ export default {
   color: $color_orange;
 
   &:hover {
-    background-color: $color_ice_cold;
-    border: 1px solid $color_ice_cold;
+    background-color: $color_orange;
+    border: 1px solid $color_orange;
     color: white;
   }
 }
