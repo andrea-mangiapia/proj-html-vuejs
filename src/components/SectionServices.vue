@@ -52,9 +52,9 @@
             </div>
         </section>
         <!-- Aphorism and Motivate-->
-        <section>
+        <section class="quote-motivate">
             <div class="container-short">
-                <div class="quote-motivate am-flex">
+                <div class="quote-motivate-content am-flex">
                     <div class="quote am-col-2">
                         <img class="img-quote" src="../assets/img/artist-quote-icon.png" alt="quote">
                         <div class="text-quote">
@@ -80,9 +80,15 @@
                 </div>
             </div>
         </section>
-        <section>
+        <!-- Video -->
+        <section class="video-yt">
             <div class="container-short">
-                Video
+                <div class="video-yt-content">
+                    <img class="shape-5" src="../assets/img/maxcoach-shape-05.png" alt="shape 5">
+                    <img class="shape-12" src="../assets/img/maxcoach-shape-12.png" alt="shape 12">
+                    <img class="video" src="../assets/img/artist-video-poster.jpg" alt="Artist video">
+                    <img class="play" src="../assets/img/icon-youtube-play.png" alt="Play Youtube">
+                </div>
             </div>
         </section>
     </div>
@@ -96,8 +102,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+    padding: 50px 0;
+}
 .services-list {
-    padding: 30px 0;
 
     .card {
         padding: 15px;
@@ -118,31 +126,64 @@ export default {
 }
 
 .quote-motivate {
-    align-items: flex-end;
+
+    .quote-motivate-content {
+        align-items: flex-end;
     
 
-    .am-col-2 {
-        width: 50%;
-    }
-    .quote {
-        text-align: center;
-        padding-right: 200px;
-
-        .img-quote {
-            width: 40px;
-            margin: 0 auto;
+        .am-col-2 {
+            width: 50%;
         }
-        .text-quote {
-            font-size: 45px;
-            font-weight: 700;
-            padding-top: 20px;
-            line-height: 1.4;
+        .quote {
+            text-align: center;
+            padding-right: 200px;
+            .img-quote {
+                width: 40px;
+                margin: 0 auto;
+            }
+            .text-quote {
+                font-size: 45px;
+                font-weight: 700;
+                padding-top: 20px;
+                line-height: 1.4;
+            }
+        }
+
+        p {
+            margin-bottom: 1.7em;
         }
     }
+}
 
-    p {
-        margin-bottom: 1.7em;
+.video-yt-content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+    .shape-5 {
+        width: 100px;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        z-index: -1;
     }
+    .shape-12 {
+        width: 150px;
+        position: absolute;
+        bottom: -20px;
+        right: -100px;
+        z-index: -1;
+    }
+   
+
+    .play {
+        width: 80px;
+        position: absolute;
+        top: calc(50% - 28px);
+        left: calc(50% - 40px);
+
+    }
+
 
 }
 
