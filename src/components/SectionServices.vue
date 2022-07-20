@@ -181,6 +181,7 @@ section {
         position: absolute;
         top: calc(50% - 28px);
         left: calc(50% - 40px);
+        cursor: pointer;
 
     }
 
